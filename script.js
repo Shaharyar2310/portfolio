@@ -174,15 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(item);
     });
 
-    // Navbar background on scroll
-    window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 50) {
-            navbar.style.background = 'hsla(var(--surface), 0.98)';
-        } else {
-            navbar.style.background = 'hsla(var(--surface), 0.95)';
-        }
-    });
+    // Navbar background on scroll - removed for solid white navbar
 
     // Typing effect for the subtitle (optional enhancement)
     function typeWriter(element, text, speed = 100) {
